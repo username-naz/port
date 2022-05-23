@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAZ</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .crosshair{
+            position: fixed;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            left: 50%;
+            top:50%;
+            border: solid red;
+        }
+    </style>
+</head>
+<script type="importmap">
+    {
+        "imports": {
+            "three": "./build/three.module.js"
+        }
+    }
+</script>
+<body>
+    <canvas class="webgl"></canvas>
+    <div class="crosshair"></div>
+</body>
+<script type="module" src="script.js"></script>
+</html>
